@@ -1,0 +1,17 @@
+{
+    "name": "illusory-react",
+    "version": "1.0.0",
+    "main": "index.js",
+    "private": true,
+    "repository": "https://github.com/fashandian/illusory-react.git",
+    "author": "fashandian <860482011@qq.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "^7.14.3",
+        "@babel/plugin-transform-react-jsx": "^7.14.3",
+        "@babel/preset-env": "^7.14.4",
+        "babel-loader": "^8.2.2",
+        "webpack": "^5.38.1",
+        "webpack-cli": "^4.7.0"
+    }
+}

@@ -5,8 +5,21 @@
  */
 
 import { createElement } from './iReact';
+import iReactDOM from './iReactDOM';
+
+const c = (
+    <div id="222" class="wrapper">
+        <span class="span1">2</span>
+        <span>3</span>
+        <span>6</span>
+        <div class="test">
+            <span>7</span>
+        </div>
+    </div>
+);
 
 const b = (
+    /** @jsx iReactDOM.createElement */
     <div id="111" class="wrapper">
         <span class="span1">1</span>
         <span>2</span>
@@ -19,4 +32,8 @@ const b = (
 
 console.log(b);
 
-document.body.appendChild(b);
+console.log(c);
+
+// document.body.appendChild(c);
+
+iReactDOM.render(c, document.body);

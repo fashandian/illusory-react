@@ -6,3 +6,7 @@
 
 # vscode config
 /.vscode
+
+# mac
+/.DS_Stores
+*/.DS_Stores

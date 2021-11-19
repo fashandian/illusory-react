@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "main": "index.js",
     "private": true,
+    "scripts": {
+        "build": "npx webpack"
+    },
     "repository": "https://github.com/fashandian/illusory-react.git",
     "author": "fashandian <860482011@qq.com>",
     "license": "MIT",

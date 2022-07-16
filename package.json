@@ -4,7 +4,8 @@
     "main": "index.js",
     "private": true,
     "scripts": {
-        "build": "npx webpack"
+        "build": "npx webpack",
+        "dev": "npx webpack serve"
     },
     "repository": "https://github.com/fashandian/illusory-react.git",
     "author": "fashandian <860482011@qq.com>",
@@ -14,7 +15,9 @@
         "@babel/plugin-transform-react-jsx": "^7.14.3",
         "@babel/preset-env": "^7.14.4",
         "babel-loader": "^8.2.2",
+        "html-webpack-plugin": "^5.5.0",
         "webpack": "^5.38.1",
-        "webpack-cli": "^4.7.0"
+        "webpack-cli": "^4.7.0",
+        "webpack-dev-server": "^4.9.3"
     }
 }

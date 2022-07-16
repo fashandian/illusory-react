@@ -8,5 +8,7 @@
 /.vscode
 
 # mac
-/.DS_Stores
-*/.DS_Stores
+.DS_Store
+
+# log
+*.log

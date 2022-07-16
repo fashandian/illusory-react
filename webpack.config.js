@@ -4,6 +4,7 @@
  * @LastEditTime: 2021-06-05 19:31:39
  */
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -12,6 +13,11 @@ module.exports = {
     },
     entry: {
         main: path.join(__dirname, './index.js'),
+    },
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/',
+        clean: true
     },
     module: {
         rules: [
@@ -36,4 +42,16 @@ module.exports = {
             },
         ],
     },
+    devServer: {
+        static: {
+            directory: path.join(__dirname, 'dist'),
+        },
+        compress: true,
+        port: 9000,
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'illusory-react',
+        }),
+    ],
 };
